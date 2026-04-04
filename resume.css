@@ -46,6 +46,7 @@ h3 {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    color: #0a4b3e;
 }
 h3 small {
     font-size: 0.75em;
