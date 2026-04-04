@@ -72,11 +72,11 @@ Netbramha Studios is a design consultancy which develops aesthetic and content i
 
 ## Education
 
-### <span>MSc Distributed Systems Engineering, Technische Universität Dresden</span> <span>Oct 2012 -- Mar 2015</span>
+### <span>MSc Distributed Systems Engineering <br><small>Technische Universität Dresden</small></span> <span>Oct 2012 -- Mar 2015</span>
 
 Completed courses in Security and Cryptography, Software Fault Tolerance and Dependable Systems. Also worked in the Systems Engineering Lab and Software Fault Tolerance Lab. Under the guidance of Prof. Dr. Christof Fetzer completed my Master's Thesis in scaling ZooKeeper. The thesis proposed a solution which partitioned the ZooKeeper FS namespace to shard the data and increase throughput by reducing the overhead of the consensus algorithm.
 
-### <span>BEng Computer Science and Engineering, BMS College of Engineering</span> <span>Jul 2006 -- Apr 2010</span>
+### <span>BEng Computer Science and Engineering <br><small>BMS College of Engineering</small></span> <span>Jul 2006 -- Apr 2010</span>
 
 Major in Computer Science with a focus on Computer Architecture. Was also an editor of the departmental newsletter and a regular contributor. For my final year project developed a Wi-Fi enabled robot which could be controlled over the Internet.
 

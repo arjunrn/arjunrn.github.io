@@ -1,61 +1,105 @@
 body {
-    color: #000000;
-    background: #EEEEEE;
-    font: 1.1em "Times New Roman";
-    line-height: 1.2;
+    color: #333333;
+    background: #eeeeee;
+    font:
+        1.1em "Georgia",
+        "Palatino",
+        serif;
+    line-height: 1.45;
     margin: 40px 0;
 }
 #resume {
     margin: 0 auto;
     max-width: 800px;
     padding: 40px 60px;
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    box-shadow: 2px 2px 4px #AAAAAA;
-    -webkit-box-shadow: 2px 2px 4px #AAAAAA;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 4px #aaaaaa;
+    -webkit-box-shadow: 2px 2px 4px #aaaaaa;
 }
 h1 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 200%;
+    font-family: "Avenir", "Gill Sans", "Futura", sans-serif;
+    font-weight: 300;
+    font-size: 220%;
     margin: 0;
     padding: 0;
+    color: #c0392b;
+    letter-spacing: 0.12em;
 }
 h2 {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #c0392b;
     text-transform: uppercase;
-    font-size: 130%;
-    margin: 1em 0 0 0;
-    padding: 0;
+    font-family: "Avenir", "Gill Sans", "Futura", sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    margin: 1.2em 0 0 0;
+    padding: 0 0 0.15em 0;
+    color: #c0392b;
+    letter-spacing: 0.06em;
 }
 h3 {
-    font-size: 100%;
+    font-size: 110%;
     margin: 0.8em 0 0.3em 0;
+    font-weight: 400;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
+h3 small {
+    font-size: 0.75em;
+    font-weight: normal;
+    color: #666666;
+}
+h3 > span:last-child {
+    color: #777777;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9em;
+    white-space: nowrap;
+    padding-left: 1em;
+}
 p {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.3em 0;
     padding: 0;
-    }
+}
+p:has(strong) {
+    font-size: 0.85em;
+}
+strong {
+    font-weight: 500;
+    color: #888888;
+}
+a,
+a:link,
+a:visited {
+    color: #c0392b;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 ul {
     padding: 0;
     margin: 0 1.5em;
-    }
+}
 /* ul immediately after h1 = contact list */
 h1 + ul {
     text-align: center;
-    margin: 0;
+    margin: 0.3em 0 0 0;
     padding: 0;
-    }
+}
 h1 + ul > li {
     display: inline;
     white-space: pre;
     list-style-type: none;
+    font-size: 0.9em;
+    color: #555555;
 }
 h1 + ul > li:after {
     content: "  \2022  ";
+    color: #c0392b;
 }
 h1 + ul > li:last-child:after {
     content: "";
@@ -79,21 +123,19 @@ h1 + ul + p {
         box-shadow: none;
         -webkit-box-shadow: none;
     }
-    /* Do not underline abbr tags in PDF */
     abbr {
         text-decoration: none;
         font-variant: none;
     }
-    /* Make links black in PDF */
-    /* Move this outside the print block to apply this in HTML too */
-    a, a:link, a:visited, a:hover {
-        color: #000000;
-        text-decoration: underline;
+    a,
+    a:link,
+    a:visited,
+    a:hover {
+        color: #c0392b;
+        text-decoration: none;
     }
 }
 @page {
-    /* Change margins and paper size of PDF */
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
     size: letter;
     margin: 0.5in 0.8in;
 }
@@ -102,7 +144,7 @@ h1 + ul + p {
         font-size: 16pt;
         margin: 0;
         padding: 0;
-        background: #FFFFFF !important;
+        background: #ffffff !important;
     }
     #resume {
         margin: 0;
