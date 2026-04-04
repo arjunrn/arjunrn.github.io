@@ -23,18 +23,24 @@ jobs:
       - name: Build resume
         run: uv run resume-markdown build
 
+      - name: Prepare Pages
+        run: |
+          mkdir _site
+          cp resume.html _site/index.html
+          cp resume.pdf _site/resume.pdf
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy
         uses: actions/deploy-pages@v4
