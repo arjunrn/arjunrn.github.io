@@ -1,0 +1,11 @@
+# Generated resume outputs
+resume.html
+resume.pdf
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store

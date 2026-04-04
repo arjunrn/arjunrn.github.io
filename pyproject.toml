@@ -1,0 +1,7 @@
+[project]
+name = "markdown-resume"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "resume-markdown>=1.0.1",
+]

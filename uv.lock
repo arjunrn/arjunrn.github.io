@@ -1,0 +1,35 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "markdown"
+version = "3.10.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2b/f4/69fa6ed85ae003c2378ffa8f6d2e3234662abd02c10d216c0ba96081a238/markdown-3.10.2.tar.gz", hash = "sha256:994d51325d25ad8aa7ce4ebaec003febcce822c3f8c911e3b17c52f7f589f950", size = 368805, upload-time = "2026-02-09T14:57:26.942Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/de/1f/77fa3081e4f66ca3576c896ae5d31c3002ac6607f9747d2e3aa49227e464/markdown-3.10.2-py3-none-any.whl", hash = "sha256:e91464b71ae3ee7afd3017d9f358ef0baf158fd9a298db92f1d4761133824c36", size = 108180, upload-time = "2026-02-09T14:57:25.787Z" },
+]
+
+[[package]]
+name = "markdown-resume"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "resume-markdown" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "resume-markdown", specifier = ">=1.0.1" }]
+
+[[package]]
+name = "resume-markdown"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/87/b0/3548d4c9b4f92ff8830b039b79b5ddfc176ec3daeb7324f804162a66b5a4/resume_markdown-1.0.1.tar.gz", hash = "sha256:6e64f0de41cd110e93619f83bedbe531e7448b569498eb1420abc47dafffc3da", size = 295442, upload-time = "2025-10-12T03:00:54.177Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/93/9f/38a885134854d86041e7e7360198ab5f2641bb3c836e718f195263edda90/resume_markdown-1.0.1-py3-none-any.whl", hash = "sha256:ed8c474ae38402032cb64822fbcf4b826e12994e5b06cfc415066752a522d44d", size = 8744, upload-time = "2025-10-12T03:00:52.749Z" },
+]
