@@ -85,6 +85,10 @@ ul {
     padding: 0;
     margin: 0 1.5em;
 }
+/* ul immediately after h2 = section list (e.g. Earlier Experience) */
+h2 + ul {
+    margin-top: 0.8em;
+}
 /* ul immediately after h1 = contact list */
 h1 + ul {
     text-align: center;
