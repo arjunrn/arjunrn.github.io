@@ -4,20 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A personal resume authored in Markdown (`resume.md`) and styled with CSS (`resume.css`), converted to HTML and PDF using the [resume-markdown](https://github.com/mikepqr/resume-markdown) tool. The resume is deployed to GitHub Pages on push to `main`.
+A personal resume authored in Markdown (`resume.md`) and styled with CSS (`resume.css`), converted to HTML and PDF using `build.py` (powered by `python-markdown` and `weasyprint`). The resume is deployed to GitHub Pages on push to `main`.
 
 ## Build Commands
 
 ```bash
-uv sync                       # Install dependencies
-uv run resume-markdown build  # Build resume.html and resume.pdf (requires Chrome/Chromium)
+uv sync                    # Install dependencies
+uv run python build.py     # Build resume.html and resume.pdf
 ```
 
 ## Key Files
 
 - `resume.md` — Resume content in Markdown. Uses `<span>` elements inside `h3` for flexbox layout of job title + date range.
 - `resume.css` — Styling for both screen and print/PDF. The CSS relies on structural selectors (e.g., `h1 + ul` for contact list, `h1 + ul + p` for summary) so Markdown heading order matters.
-- `pyproject.toml` — Declares the single dependency (`resume-markdown`). Uses `uv` for dependency management.
+- `build.py` — Build script that converts Markdown to HTML and PDF using `python-markdown` and `weasyprint`.
+- `pyproject.toml` — Declares dependencies (`markdown`, `weasyprint`). Uses `uv` for dependency management.
 
 ## CI/CD
 
@@ -26,7 +27,7 @@ uv run resume-markdown build  # Build resume.html and resume.pdf (requires Chrom
 
 ## Resume Markdown Conventions
 
-The `resume-markdown` tool converts `resume.md` to HTML wrapped in a `<div id="resume">` and injects `resume.css`. PDF is generated via headless Chrome. The Markdown structure follows a specific convention:
+`build.py` converts `resume.md` to HTML wrapped in a `<div id="resume">` and injects `resume.css`. PDF is generated via WeasyPrint (no Chrome required). The Markdown structure follows a specific convention:
 
 - `h1` = name, followed immediately by a `ul` for contact info
 - The paragraph after the contact list is the summary

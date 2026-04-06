@@ -20,7 +20,7 @@ jobs:
         run: uv sync
 
       - name: Build resume
-        run: uv run resume-markdown build
+        run: uv run python build.py
 
       - name: Upload PDF artifact
         id: upload

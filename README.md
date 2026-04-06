@@ -1,12 +1,11 @@
 # Resume
 
-Markdown-based resume built with [resume-markdown](https://github.com/mikepqr/resume-markdown).
+Markdown-based resume built with [python-markdown](https://python-markdown.github.io/) and [WeasyPrint](https://weasyprint.org/).
 
 ## Prerequisites
 
-- Python >= 3.9
+- Python >= 3.14
 - [uv](https://docs.astral.sh/uv/)
-- Google Chrome or Chromium (for PDF generation)
 
 ## Usage
 
@@ -16,11 +15,11 @@ Install dependencies:
 
 Build HTML and PDF:
 
-    uv run resume-markdown build
+    uv run python build.py
 
 The output files are `resume.html` and `resume.pdf`.
 
 ## CI
 
-On every push to `main`, a GitHub Actions workflow builds the resume and uploads the PDF as a workflow artifact.
-On pull requests, the workflow validates that the resume builds successfully.
+On every push to `main`, a GitHub Actions workflow builds the resume and deploys it to GitHub Pages.
+On pull requests, the workflow builds the resume and posts a comment with a link to download the PDF.
