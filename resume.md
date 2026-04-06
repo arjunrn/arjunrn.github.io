@@ -17,21 +17,15 @@ Staff software engineer with 10+ years of experience building and operating plat
 - Integrated in-house authentication and authorization solution into the service mesh
 - Mentored engineers and drove system design across multiple domains
 
-**Technologies:** Go, Kubernetes, AWS, Open Application Model.
-
 ### <span>Senior Software Engineer OpenShift, Red Hat</span> <span>Jun 2021 -- Jul 2022</span>
 
 - Built Kubernetes operators extending the OpenShift Container Platform via CRDs and controllers
 - Delivered features for networking, authentication, and cluster upgrade workflows
 
-**Technologies:** Go, OpenShift, controller-runtime, kubebuilder.
-
 ### <span>Senior Software Engineer SRE, Red Hat</span> <span>Jul 2020 -- May 2021</span>
 
 - Developed and standardized operators for managing OpenShift Dedicated clusters
 - Improved monitoring and alerting for OSD cluster features using Prometheus
-
-**Technologies:** Go, OpenShift, Prometheus, controller-runtime, kubebuilder.
 
 ### <span>Senior Software Engineer (AWS and Kubernetes), Zalando SE</span> <span>Aug 2018 -- Jun 2020</span>
 
@@ -39,8 +33,6 @@ Staff software engineer with 10+ years of experience building and operating plat
 - Built open source tooling for blue-green deployments, pre-scaling, and rollbacks
 - Contributed autoscaling improvements to upstream Kubernetes (VPA and HPA)
 - Designed CI/CD integration enabling teams to deploy with minimal configuration
-
-**Technologies:** AWS, Go, Kubernetes, Ubuntu.
 
 ### <span>Site Reliability Engineer, Cubits</span> <span>Jan 2018 -- May 2018</span>
 
@@ -52,8 +44,6 @@ Staff software engineer with 10+ years of experience building and operating plat
 - Performed load testing and capacity planning to validate scaling requirements
 - Built tooling to manage Elasticsearch and Cassandra clusters for the Recommendations team
 - Defined and maintained SLOs for personalized recommendation services
-
-**Technologies:** Go, Java, AWS, locust, Spring Boot, Kubernetes, Elasticsearch, Cassandra.
 
 ### <span>Research Assistant, TU Dresden</span> <span>Mar 2014 -- Dec 2014</span>
 
