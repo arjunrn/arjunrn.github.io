@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&family=Raleway:wght@300;400&display=swap');
+
 body {
     color: #333333;
     background: #eeeeee;
     font:
-        1.1em "Georgia",
-        "Palatino",
+        1.1em "Crimson Pro",
+        "Georgia",
         serif;
     line-height: 1.45;
     margin: 40px 0;
@@ -20,7 +22,7 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
-    font-family: "Avenir", "Gill Sans", "Futura", sans-serif;
+    font-family: "Raleway", "Avenir", sans-serif;
     font-weight: 300;
     font-size: 220%;
     margin: 0;
@@ -31,7 +33,7 @@ h1 {
 h2 {
     border-bottom: 1px solid #c0392b;
     text-transform: uppercase;
-    font-family: "Avenir", "Gill Sans", "Futura", sans-serif;
+    font-family: "Raleway", "Avenir", sans-serif;
     font-weight: 400;
     font-size: 120%;
     margin: 1.2em 0 0 0;
