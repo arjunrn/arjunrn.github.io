@@ -115,7 +115,36 @@ h1 + ul > li:last-child:after {
 h1 + ul + p {
     margin: 1em 0;
 }
+#download {
+    position: fixed;
+    top: 2em;
+    right: max(1.5em, calc(50vw - 400px + 1.5em));
+    z-index: 100;
+}
+#download a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-family: "Raleway", "Avenir", sans-serif;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #ffffff;
+    background: #c0392b;
+    padding: 0.35em 0.85em;
+    border-radius: 2em;
+    text-decoration: none;
+    transition: background 0.2s;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.25);
+}
+#download a:hover {
+    background: #a93226;
+    text-decoration: none;
+}
 @media print {
+    #download {
+        display: none;
+    }
+
     body {
         font-size: 10pt;
         margin: 0;
